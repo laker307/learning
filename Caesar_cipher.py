@@ -53,3 +53,12 @@ if __name__ == '__main__':
             sh = int(input())
             proc = process(text,sh)
             proc.encode()
+
+        if command == '2':
+            print('Enter text')
+            text = input()
+            print('Enter count of shift')
+            sh = int(input())
+            proc = process(text,sh)
+            proc.decode()
+
