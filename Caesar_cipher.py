@@ -13,11 +13,11 @@ class process():
     def encode(self):
         for i in self.name:
             if i in process.alphabetBIG:
-                index = process.alphabetBIG.index(i)
-                process.new += process.alphabetBIG[index + self.shift]
+                index = process.alphabetBIG.index(i)%len(process.alphabetBIG)
+                process.new += process.alphabetBIG[(index + self.shift)%len(process.alphabetBIG)]
             elif i in process.alphabetLITTLE:
-                index = process.alphabetLITTLE.index(i)
-                process.new +=  process.alphabetLITTLE[index + self.shift]
+                index = process.alphabetLITTLE.index(i)%len(process.alphabetLITTLE)
+                process.new +=  process.alphabetLITTLE[(index + self.shift)%len(process.alphabetLITTLE)]
             else:
                 process.new = process.new + i
         print(process.new)
@@ -26,11 +26,11 @@ class process():
     def decode(self):
         for i in self.name:
             if i in process.alphabetBIG:
-                index = process.alphabetBIG.index(i)
-                process.new += process.alphabetBIG[index - self.shift]
+                index = process.alphabetBIG.index(i)%len(process.alphabetBIG)
+                process.new += process.alphabetBIG[(index - self.shift)%len(process.alphabetBIG)]
             elif i in process.alphabetLITTLE:
-                index = process.alphabetLITTLE.index(i)
-                process.new += process.alphabetLITTLE[index - self.shift]
+                index = process.alphabetLITTLE.index(i)%len(process.alphabetLITTLE)
+                process.new +=  process.alphabetLITTLE[(index - self.shift)%len(process.alphabetLITTLE)]
             else:
                 process.new = process.new + i
         print(process.new)
@@ -53,13 +53,3 @@ if __name__ == '__main__':
             sh = int(input())
             proc = process(text,sh)
             proc.encode()
-
-
-        if command == '2':
-            print('Enter text')
-            text = input()
-            print('Enter count of shift')
-            sh = int(input())
-            proc = process(text,sh)
-            proc.decode()
-
