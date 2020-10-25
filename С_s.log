@@ -1,0 +1,32 @@
+2020-10-25 21:48:47,595  :  INFO - User started working
+2020-10-25 21:48:48,997  :  INFO - User selected the operating mode - 1
+2020-10-25 21:48:57,822  :  INFO - User added the text - Привет! Логгирую
+2020-10-25 21:48:59,614  :  INFO - User added the shift - 120
+2020-10-25 21:48:59,614  :  INFO - End of operation - Зибщэк! Джььбилх
+2020-10-25 21:49:03,845  :  INFO - User selected the operating mode - 2
+2020-10-25 21:49:05,877  :  INFO - User added the text - Зибщэк! Джььбилх
+2020-10-25 21:49:07,261  :  INFO - User added the shift - 120
+2020-10-25 21:49:07,261  :  INFO - End of operation - Привет! Логгирую
+2020-10-25 21:49:21,301  :  INFO - User selected the operating mode - 
+2020-10-25 21:49:21,301  :  INFO - User stoped to working
+2020-10-25 21:49:26,792  :  INFO - User started working
+2020-10-25 21:49:28,317  :  INFO - User selected the operating mode - 1
+2020-10-25 21:49:38,016  :  INFO - User added the text - А теперь всё сломается!
+2020-10-25 21:49:38,821  :  ERROR - Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/laker/OneDrive/Документы/GitHub/learning/Caesar_cipher.py", line 61, in <module>
+    sh = int(input())
+ValueError: invalid literal for int() with base 10: ''
+2020-10-25 21:49:52,997  :  INFO - User selected the operating mode - 1
+2020-10-25 21:50:03,741  :  INFO - User added the text - А теперь всё нормально!
+2020-10-25 21:50:06,750  :  INFO - User added the shift - 1
+2020-10-25 21:50:06,750  :  INFO - End of operation - Б уёрёсъ гтж опснбмъоп!
+2020-10-25 21:50:11,117  :  INFO - User selected the operating mode - 2
+2020-10-25 21:50:14,060  :  INFO - User added the text - Б уёрёсъ гтж опснбмъоп!
+2020-10-25 21:50:19,221  :  ERROR - Exception occurred
+Traceback (most recent call last):
+  File "C:/Users/laker/OneDrive/Документы/GitHub/learning/Caesar_cipher.py", line 77, in <module>
+    sh = int(input())
+ValueError: invalid literal for int() with base 10: '1.1'
+2020-10-25 21:50:20,757  :  INFO - User selected the operating mode - 
+2020-10-25 21:50:20,757  :  INFO - User stoped to working
